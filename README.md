@@ -13,7 +13,7 @@ __**目录**__
  <img src='https://g.gravizo.com/svg?
 @startuml;
 
-Title "Reporter类图"
+Title "Reporter类图"；
 interface Listener；
 abstract class SearchListener{
 +         void searchStarted(Search *search)
