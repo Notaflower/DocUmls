@@ -9,7 +9,8 @@ __**目录**__
 ### Reporter
 
 #### Reporter概述
-<img src='https://g.gravizo.com/svg?
+
+ <img src='https://g.gravizo.com/svg?
 @startuml;
 
 Title "Reporter类图"
@@ -41,34 +42,7 @@ SearchListener  <|-- Reporter；
 '>
     
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+ 
 ## 第二章
 
 请输入第二章内容
