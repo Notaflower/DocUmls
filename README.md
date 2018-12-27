@@ -1,18 +1,42 @@
-# 测试Markdown 
-
-----------
-
+## 开发者手册
 __**目录**__
+- [整体构架](#整体构架)
+- [Reporter输入输出产生](#reprorter)
 
-- [SECore整体构架](#secore整体构架)
-- [windows开发环境搭建](#第二章)
-## SECore整体构架
+### 整体构架
 
-请输入第一章内容
-请输入第一章内容
-- 
-- 
-- 
+
+### Reporter
+
+#### Reporter概述
+
+<img src='https://g.gravizo.com/svg?
+Title "Reporter类图"
+interface Listener
+abstract class SearchListener{
++         void searchStarted(Search *search)
++         void searchFinished(Search *searcher)
++         void stateAdvanced(Search *searcher)
++         void stateRemoved(Search *search, ExecutionState *state)
+}
+abstract class VMListener{
+   + void executeInstruction(VM *vm)
++ void instructionExecuted(VM *vm)
+        + void objectCreated(VM *vm)
+        + void objectDetroyed(VM *vm)
+        + void methodEntered(VM *vm, Function *f)
+        + void methodExited(VM *vm, Function *f)
+
+}
+class Reporter{
+- unsigned long long totalPaths
+}
+
+Listener <|..  SearchListener
+Listener <|..  VMListener
+SearchListener  <|-- Reporter
+'/>
+
 - 
 - 
 - 
