@@ -10,32 +10,7 @@ __**目录**__
 
 #### Reporter概述
 
-<img src='https://g.gravizo.com/svg?
-Title "Reporter类图"
-interface Listener
-abstract class SearchListener{
-+         void searchStarted(Search *search)
-+         void searchFinished(Search *searcher)
-+         void stateAdvanced(Search *searcher)
-+         void stateRemoved(Search *search, ExecutionState *state)
-}
-abstract class VMListener{
-   + void executeInstruction(VM *vm)
-+ void instructionExecuted(VM *vm)
-        + void objectCreated(VM *vm)
-        + void objectDetroyed(VM *vm)
-        + void methodEntered(VM *vm, Function *f)
-        + void methodExited(VM *vm, Function *f)
-
-}
-class Reporter{
-- unsigned long long totalPaths
-}
-
-Listener <|..  SearchListener
-Listener <|..  VMListener
-SearchListener  <|-- Reporter
-'/>
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Zingam/Markdown-Document-UML-Use-Test/master/UML/Instance.puml)
 
 - 
 - 
