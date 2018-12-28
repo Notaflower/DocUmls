@@ -7,6 +7,7 @@ abstract class SearchListener{
 +         void stateAdvanced(Search *searcher)
 +         void stateRemoved(Search *search, ExecutionState *state)
 }
+
 abstract class VMListener{
    + void executeInstruction(VM *vm)
 + void instructionExecuted(VM *vm)
@@ -16,6 +17,7 @@ abstract class VMListener{
         + void methodExited(VM *vm, Function *f)
 
 }
+
 class Reporter{
 - unsigned long long totalPaths
 }
