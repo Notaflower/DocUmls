@@ -1,5 +1,5 @@
 @startuml
-Title "Reporter类图"
+
 interface Listener
 abstract class SearchListener{
 +         void searchStarted(Search *search)
@@ -25,4 +25,6 @@ class Reporter{
 Listener <|..  SearchListener
 Listener <|..  VMListener
 SearchListener  <|-- Reporter
+
+Title "Reporter类图"
 @enduml
