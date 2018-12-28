@@ -1,3 +1,4 @@
+@startuml
 Title "Reporter类图"
 interface Listener
 abstract class SearchListener{
@@ -22,3 +23,4 @@ class Reporter{
 Listener <|..  SearchListener
 Listener <|..  VMListener
 SearchListener  <|-- Reporter
+@enduml
